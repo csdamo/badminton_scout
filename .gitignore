@@ -1,0 +1,12 @@
+*.pyc
+*~
+__pycache__
+myvenv
+venv
+db.sqlite3
+/static
+.DS_Store
+settings.py
+settings-EXAMPLE-DESENV.py
+settings-EXAMPLE-PROD.py
+.idea/
