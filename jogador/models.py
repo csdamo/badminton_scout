@@ -11,6 +11,7 @@ class Jogador(models.Model):
     )
 
     nome_jogador = models.CharField(max_length=200)
+    foto = models.ImageField(upload_to='jogador/', blank=True, null=True)
     data_nascimento = models.DateField(blank=True, null=True)
     telefone = models.CharField(max_length=12, blank=True, null=True)
     email = models.CharField(max_length=200, blank=True, null=True)
