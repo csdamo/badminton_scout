@@ -30,6 +30,8 @@ class Partida(models.Model):
         default='misto',
     )
 
+    nome = models.CharField( max_length=100, blank=True, null=True)
+
     jogador_1 = models.ForeignKey(
         Jogador, on_delete=models.PROTECT, related_name='jogador_1')
     jogador_2 = models.ForeignKey(
