@@ -6,7 +6,6 @@ from partida.models import Partida
 class Set(models.Model):
 
     partida = models.ForeignKey(Partida, on_delete=models.PROTECT)
-    duracao = models.PositiveIntegerField(blank=True, null=True)
     ordem = models.PositiveSmallIntegerField()
 
     criado_em = models.DateTimeField(auto_now_add=True)
