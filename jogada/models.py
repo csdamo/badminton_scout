@@ -13,7 +13,7 @@ class Jogada(models.Model):
     golpe = models.ForeignKey(Golpe, on_delete=models.CASCADE)
     quadrante = models.ForeignKey(Quadrante, on_delete=models.CASCADE)
 
-    acerto = models.NullBooleanField
+    acerto = models.BooleanField()
 
     criado_em = models.DateTimeField(auto_now_add=True)
     atualizado_em = models.DateTimeField(auto_now=True)
