@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'quadrante',
     'golpe',
     'jogada',
+    'tipoerro'
 ]
 
 MIDDLEWARE = [
