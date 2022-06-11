@@ -4,6 +4,7 @@ from set.models import Set
 from golpe.models import Golpe
 from jogador.models import Jogador
 from quadrante.models import Quadrante
+from tipoerro.models import TipoErro
 
 
 class Jogada(models.Model):
@@ -14,6 +15,8 @@ class Jogada(models.Model):
     quadrante = models.ForeignKey(Quadrante, on_delete=models.CASCADE)
 
     acerto = models.BooleanField()
+
+    tipo_erro = models.ForeignKey(TipoErro, on_delete=models.CASCADE, blank=True, null=True)
 
     criado_em = models.DateTimeField(auto_now_add=True)
     atualizado_em = models.DateTimeField(auto_now=True)
