@@ -13,7 +13,8 @@ class Quadrante(models.Model):
     lado = models.CharField(
         max_length=9,
         choices=SIDE_CHOICES,
-        default='esquerdo',
+        blank=True,
+        null=True
     )
 
     criado_em = models.DateTimeField(auto_now_add=True)
